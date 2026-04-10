@@ -176,4 +176,92 @@ func init() {
 		"status.mcp_call_sq": "MCPツール実行中...（%s/%s）",
 		"status.mcp_default": "MCP操作中...",
 	})
+
+	register("pt", map[string]string{
+		// status labels
+		"status.thinking":    "Pensando...",
+		"status.processing":  "Processando...",
+		"status.interrupted": "[Resposta interrompida]",
+
+		// web
+		"status.searching":     "Pesquisando...",
+		"status.searching_q":   "Pesquisando... (%s)",
+		"status.fetching_page": "Buscando pagina...",
+		"status.fetching_q":    "Buscando pagina... (%s)",
+
+		// file operations
+		"status.reading_file":     "Lendo arquivo...",
+		"status.reading_file_q":   "Lendo arquivo... (%s)",
+		"status.writing_file":     "Gravando arquivo...",
+		"status.writing_file_q":   "Gravando arquivo... (%s)",
+		"status.editing_file":     "Editando arquivo...",
+		"status.editing_file_q":   "Editando arquivo... (%s)",
+		"status.appending_file":   "Acrescentando ao arquivo...",
+		"status.appending_file_q": "Acrescentando ao arquivo... (%s)",
+
+		// directory
+		"status.listing_dir":   "Verificando pasta...",
+		"status.listing_dir_q": "Verificando pasta... (%s)",
+
+		// exec
+		"status.running_command":   "Executando comando...",
+		"status.running_command_q": "Executando comando... (%s)",
+
+		// memory
+		"status.memory_read":         "Carregando memoria...",
+		"status.memory_read_daily":   "Carregando nota de hoje...",
+		"status.memory_write":        "Gravando memoria...",
+		"status.memory_append_daily": "Acrescentando na nota de hoje...",
+		"status.memory_default":      "Operacao de memoria...",
+
+		// skill
+		"status.skill_list":    "Obtendo lista de skills...",
+		"status.skill_read":    "Carregando skill...",
+		"status.skill_read_q":  "Carregando skill... (%s)",
+		"status.skill_default": "Operacao de skill...",
+
+		// cron
+		"status.cron_add":     "Definindo lembrete...",
+		"status.cron_list":    "Obtendo agenda...",
+		"status.cron_remove":  "Removendo agendamento...",
+		"status.cron_default": "Atualizando agenda...",
+
+		// message
+		"status.sending_message": "Enviando mensagem...",
+
+		// spawn/subagent
+		"status.spawn":      "Iniciando subtarefa...",
+		"status.spawn_q":    "Iniciando subtarefa... (%s)",
+		"status.subagent":   "Executando subtarefa...",
+		"status.subagent_q": "Executando subtarefa... (%s)",
+
+		// android
+		"status.android_search_apps":  "Pesquisando apps...",
+		"status.android_app_info":     "Obtendo info do app...",
+		"status.android_app_info_q":   "Obtendo info do app... (%s)",
+		"status.android_launch_app":   "Abrindo app...",
+		"status.android_launch_app_q": "Abrindo app... (%s)",
+		"status.android_screenshot":   "Capturando tela...",
+		"status.android_get_ui_tree":  "Obtendo elementos de UI...",
+		"status.android_tap":          "Tocando...",
+		"status.android_swipe":        "Deslizando...",
+		"status.android_text":         "Digitando texto...",
+		"status.android_keyevent":     "Operacao de tecla...",
+		"status.android_keyevent_q":   "Operacao de tecla... (%s)",
+		"status.android_broadcast":    "Enviando broadcast...",
+		"status.android_intent":       "Enviando intent...",
+		"status.android_default":      "Operacao no dispositivo...",
+
+		// exit
+		"status.exit": "Encerrando assistente...",
+
+		// mcp
+		"status.mcp_list":    "Obtendo lista de servidores MCP...",
+		"status.mcp_tools":   "Obtendo ferramentas MCP...",
+		"status.mcp_tools_q": "Obtendo ferramentas MCP... (%s)",
+		"status.mcp_call":    "Executando ferramenta MCP...",
+		"status.mcp_call_q":  "Executando ferramenta MCP... (%s)",
+		"status.mcp_call_sq": "Executando ferramenta MCP... (%s/%s)",
+		"status.mcp_default": "Operacao MCP...",
+	})
 }

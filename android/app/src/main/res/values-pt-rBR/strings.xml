@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">ClawDroid</string>
+    <string name="accessibility_service_description">Permite que o ClawDroid capture capturas de tela durante conversas com o assistente de voz.</string>
+
+    <!-- Setup Step 1: Gateway -->
+    <string name="setup_step_1_of_4">Etapa 1 de 4</string>
+    <string name="setup_gateway_title">Conexao do Gateway</string>
+    <string name="setup_gateway_description">O gateway gerencia a comunicacao entre este app e o backend Go executando localmente. Uma chave de API e necessaria para autenticar as requisicoes entre eles.</string>
+    <string name="setup_gateway_port_label">Porta</string>
+    <string name="setup_gateway_port_hint">Porta local para comunicacao com o backend (padrao: 18790)</string>
+    <string name="setup_gateway_api_key_label">Chave de API</string>
+    <string name="setup_gateway_api_key_hint">Protege a comunicacao entre este app e o backend. Use "Gerar" para criar automaticamente.</string>
+    <string name="setup_generate_api_key">Gerar Chave de API</string>
+
+    <!-- Setup Step 2: LLM -->
+    <string name="setup_step_2_of_4">Etapa 2 de 4</string>
+    <string name="setup_llm_title">Configuracoes de LLM</string>
+    <string name="setup_llm_description">Escolha qual modelo de IA vai executar o agente. Os provedores suportados sao OpenAI, Anthropic e Gemini. Informe o nome do modelo no formato provedor/modelo.</string>
+    <string name="setup_llm_model_label">Modelo</string>
+    <string name="setup_llm_model_placeholder">provedor/modelo</string>
+    <string name="setup_llm_model_hint">Formato: provedor/modelo (ex.: openai/gpt-5, anthropic/claude-sonnet-4-6, gemini/gemini-3.1-flash)</string>
+    <string name="setup_llm_api_key_label">Chave de API</string>
+    <string name="setup_llm_api_key_hint">Chave de API do seu provedor de LLM (OpenAI, Anthropic ou Gemini)</string>
+    <string name="setup_llm_base_url_label">URL Base</string>
+    <string name="setup_llm_base_url_hint">Endpoint de API personalizado. Deixe em branco para usar o padrao do provedor.</string>
+    <string name="setup_set_up_later">Configurar depois</string>
+
+    <!-- Setup Step 3: Workspace -->
+    <string name="setup_step_3_of_4">Etapa 3 de 4</string>
+    <string name="setup_workspace_title">Workspace e Dados</string>
+    <string name="setup_workspace_description">O workspace e onde o agente le e grava seus arquivos. O diretorio de dados armazena dados internos, como memoria e logs.</string>
+    <string name="setup_workspace_label">Workspace</string>
+    <string name="setup_workspace_hint">Diretorio onde o agente le e grava arquivos</string>
+    <string name="setup_data_dir_label">Diretorio de Dados</string>
+    <string name="setup_data_dir_hint">Diretorio para dados internos, como memoria e logs</string>
+
+    <!-- Setup Step 4: Complete -->
+    <string name="setup_step_4_of_4">Etapa 4 de 4</string>
+    <string name="setup_complete_title">Configuracao concluida!</string>
+    <string name="setup_complete_description">Voce pode alterar essas configuracoes a qualquer momento na tela de Configuracoes, onde tambem encontra opcoes adicionais como configuracao de canais e gerenciamento de ferramentas.</string>
+
+    <!-- Common buttons -->
+    <string name="btn_next">Avancar</string>
+    <string name="btn_done">Concluir</string>
+    <string name="btn_save">Salvar</string>
+    <string name="btn_saving">Salvando...</string>
+    <string name="btn_show">Mostrar</string>
+    <string name="btn_hide">Ocultar</string>
+    <string name="btn_back">Voltar</string>
+    <string name="btn_browse">Procurar</string>
+
+    <!-- App Settings -->
+    <string name="app_settings_title">Conexao</string>
+    <string name="app_settings_gateway_section">Conexao do Gateway</string>
+    <string name="app_settings_port_label">Porta</string>
+    <string name="app_settings_api_key_label">Chave de API</string>
+
+    <!-- Notification -->
+    <string name="notification_channel_messages">Mensagens do Agente</string>
+    <string name="notification_channel_messages_desc">Mensagens do agente ClawDroid</string>
+    <string name="notification_channel_assistant">Assistente</string>
+    <string name="notification_channel_assistant_desc">Servico de sobreposicao do assistente</string>
+    <string name="notification_channel_gateway">Gateway</string>
+    <string name="notification_channel_gateway_desc">Servico de backend do gateway</string>
+    <string name="notification_title">ClawDroid</string>
+
+    <!-- Common actions -->
+    <string name="action_cancel">Cancelar</string>
+
+    <!-- Accessibility Guide -->
+    <string name="assistant_accessibility_title">Configuracao de Captura de Tela</string>
+    <string name="assistant_accessibility_body">Para usar captura de tela, ative o ClawDroid nas configuracoes de Acessibilidade.\n\nSe nao conseguir ativar, abra Informacoes do app e selecione "Permitir configuracoes restritas", depois tente novamente.</string>
+    <string name="assistant_accessibility_open_settings">Abrir Configuracoes</string>
+
+    <!-- Assistant Notification -->
+    <string name="assistant_notification_listening">Ouvindo...</string>
+
+    <!-- Calendar Picker -->
+    <string name="calendar_picker_title">Selecionar Calendario</string>
+</resources>

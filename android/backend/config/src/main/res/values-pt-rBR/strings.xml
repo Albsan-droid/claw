@@ -1,0 +1,22 @@
+<resources>
+    <string name="config_save">Salvar</string>
+    <string name="config_show">Mostrar</string>
+    <string name="config_hide">Ocultar</string>
+    <string name="config_comma_separated">Valores separados por virgula</string>
+    <string name="config_internal_storage_only">Somente armazenamento interno</string>
+    <string name="config_internal_storage_saf">Somente armazenamento interno no seletor SAF</string>
+    <string name="config_select_calendar">Selecionar Calendario</string>
+    <string name="config_pick_each_time">Escolher sempre</string>
+    <string name="config_cancel">Cancelar</string>
+    <string name="config_back">Voltar</string>
+    <string name="config_browse">Procurar</string>
+    <string name="config_saved">Salvo.</string>
+    <string name="config_saved_restarting">Salvo. Reiniciando servidor...</string>
+    <string name="config_error_prefix">Erro: </string>
+    <string name="config_backend_config">Configuracao do Backend</string>
+    <string name="config_retry">Tentar novamente</string>
+    <string name="config_connection_settings">Configuracoes de Conexao</string>
+    <string name="config_open">Abrir</string>
+    <string name="config_fields_count">%1$d campos</string>
+    <string name="config_select">Selecionar</string>
+</resources>

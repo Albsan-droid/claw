@@ -15,6 +15,8 @@ func TestNormalizeLocale(t *testing.T) {
 		{"ja", "ja"},
 		{"ja-JP", "ja"},
 		{"en_US", "en"},
+		{"pt-BR", "pt"},
+		{"pt_BR", "pt"},
 		{"EN", "en"},
 		{"  ja  ", "ja"},
 		// Accept-Language header formats
@@ -42,6 +44,12 @@ func TestT(t *testing.T) {
 	got = T("ja", "status.thinking")
 	if got != "思考中..." {
 		t.Errorf("T(ja, status.thinking) = %q", got)
+	}
+
+	// Portuguese
+	got = T("pt-BR", "status.thinking")
+	if got != "Pensando..." {
+		t.Errorf("T(pt-BR, status.thinking) = %q", got)
 	}
 
 	// Fallback to en for unknown locale
@@ -101,20 +109,21 @@ func TestFormatSpecifierConsistency(t *testing.T) {
 	re := regexp.MustCompile(`%[sdvfgqxobt]`)
 
 	enMessages := messages["en"]
-	jaMessages := messages["ja"]
+	for _, locale := range []string{"ja", "pt"} {
+		localeMessages := messages[locale]
+		for key, enVal := range enMessages {
+			localeVal, ok := localeMessages[key]
+			if !ok {
+				continue // locale doesn't have this key; fallback to en is fine
+			}
 
-	for key, enVal := range enMessages {
-		jaVal, ok := jaMessages[key]
-		if !ok {
-			continue // ja doesn't have this key; fallback to en is fine
-		}
+			enSpecs := re.FindAllString(enVal, -1)
+			localeSpecs := re.FindAllString(localeVal, -1)
 
-		enSpecs := re.FindAllString(enVal, -1)
-		jaSpecs := re.FindAllString(jaVal, -1)
-
-		if len(enSpecs) != len(jaSpecs) {
-			t.Errorf("format specifier count mismatch for key %q: en has %d (%v), ja has %d (%v)",
-				key, len(enSpecs), enSpecs, len(jaSpecs), jaSpecs)
+			if len(enSpecs) != len(localeSpecs) {
+				t.Errorf("format specifier count mismatch for key %q in %s: en has %d (%v), %s has %d (%v)",
+					key, locale, len(enSpecs), enSpecs, locale, len(localeSpecs), localeSpecs)
+			}
 		}
 	}
 }

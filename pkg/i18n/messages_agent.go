@@ -16,4 +16,12 @@ func init() {
 		"agent.rate_limited":             "レート制限中: %s。しばらくしてからお試しください。",
 		"agent.rate_limited_tool":        "レート制限中: %s",
 	})
+
+	register("pt", map[string]string{
+		"agent.migration_notice":         "USER.md encontrado. O gerenciamento de usuarios foi migrado para um novo formato (users.json).\nPeca a migracao no chat, ou atualize manualmente.\n\nPara atualizar manualmente, crie ~/.clawdroid/data/users.json neste formato:\n```json\n{\n  \"users\": [{\n    \"name\": \"Seu Nome\",\n    \"channels\": { \"websocket\": [\"default\"] },\n    \"memo\": [\"Idioma preferido: Portugues\"]\n  }]\n}\n```",
+		"agent.context_window_warning":   "⚠️ Limite da janela de contexto excedido. Compactando historico e tentando novamente...",
+		"agent.memory_threshold_warning": "⚠️ Limite de memoria atingido. Otimizando historico da conversa...",
+		"agent.rate_limited":             "Limite de taxa: %s. Tente novamente mais tarde.",
+		"agent.rate_limited_tool":        "Limite de taxa: %s",
+	})
 }

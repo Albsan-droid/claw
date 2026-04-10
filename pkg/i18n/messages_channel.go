@@ -80,4 +80,43 @@ func init() {
 		"agent.cmd.switch.unknown":    "不明な切り替え対象: %s",
 		"agent.cmd.channel_mgr_error": "チャンネルマネージャーが初期化されていません",
 	})
+
+	register("pt", map[string]string{
+		// Telegram
+		"channel.thinking": "Pensando... 💭",
+
+		// WebSocket
+		"channel.config_required": "Configuracao obrigatoria",
+
+		// Telegram commands
+		"cmd.help": `/start - Iniciar o bot
+/help - Mostrar esta mensagem de ajuda
+/show [model|channel] - Mostrar configuracao atual
+/list [models|channels] - Listar opcoes disponiveis
+`,
+		"cmd.start":         "Ola! Eu sou o ClawDroid 🦞",
+		"cmd.show.usage":    "Uso: /show [model|channel]",
+		"cmd.show.model":    "Modelo atual: %s",
+		"cmd.show.channel":  "Canal atual: telegram",
+		"cmd.show.unknown":  "Parametro desconhecido: %s. Use 'model' ou 'channel'.",
+		"cmd.list.usage":    "Uso: /list [models|channels]",
+		"cmd.list.models":   "Modelo configurado: %s\n\nPara trocar o modelo, atualize config.json",
+		"cmd.list.channels": "Canais habilitados:\n- %s",
+		"cmd.list.unknown":  "Parametro desconhecido: %s. Use 'models' ou 'channels'.",
+
+		// Agent loop commands
+		"agent.cmd.show.model":        "Modelo atual: %s",
+		"agent.cmd.show.channel":      "Canal atual: %s",
+		"agent.cmd.show.unknown":      "Destino desconhecido em show: %s",
+		"agent.cmd.list.models":       "Modelos disponiveis: glm-4.7, claude-3-5-sonnet, gpt-4o (configurados em config.json/env)",
+		"agent.cmd.list.no_channels":  "Nenhum canal habilitado",
+		"agent.cmd.list.channels":     "Canais habilitados: %s",
+		"agent.cmd.list.unknown":      "Destino desconhecido em list: %s",
+		"agent.cmd.switch.usage":      "Uso: /switch [model|channel] to <nome>",
+		"agent.cmd.switch.model":      "Modelo alterado de %s para %s",
+		"agent.cmd.switch.channel":    "Canal de destino alterado para %s (Obs.: no momento, apenas valida existencia)",
+		"agent.cmd.switch.not_found":  "Canal '%s' nao encontrado ou nao habilitado",
+		"agent.cmd.switch.unknown":    "Destino desconhecido em switch: %s",
+		"agent.cmd.channel_mgr_error": "Gerenciador de canais nao inicializado",
+	})
 }

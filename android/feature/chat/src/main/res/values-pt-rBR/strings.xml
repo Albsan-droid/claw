@@ -1,0 +1,46 @@
+<resources>
+    <!-- Connection Banner -->
+    <string name="connection_connecting">Conectando...</string>
+    <string name="connection_reconnecting">Reconectando...</string>
+    <string name="connection_disconnected">Desconectado</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Configuracoes</string>
+    <string name="settings_tts_section">Texto para Fala</string>
+    <string name="settings_tts_speed">Velocidade</string>
+    <string name="settings_tts_pitch">Tom</string>
+    <string name="settings_tts_speaking">Falando...</string>
+    <string name="settings_tts_test">Testar Voz</string>
+    <string name="settings_other_section">Outras Configuracoes</string>
+    <string name="settings_backend_config">Configuracao do Backend</string>
+    <string name="settings_backend_config_desc">Configure as opcoes do servidor backend</string>
+    <string name="settings_app_settings">Configuracoes do App</string>
+    <string name="settings_app_settings_desc">Configuracoes de conexao do gateway</string>
+    <string name="settings_system_default">Padrao do sistema</string>
+    <string name="settings_engine_label">Motor</string>
+    <string name="settings_voice_label">Voz</string>
+    <string name="settings_open">Abrir</string>
+    <string name="btn_back">Voltar</string>
+
+    <!-- Voice Mode -->
+    <string name="voice_close">Fechar</string>
+    <string name="voice_camera_on">Ligar camera</string>
+    <string name="voice_camera_off">Desligar camera</string>
+    <string name="voice_listening">Ouvindo...</string>
+    <string name="voice_paused">Pausado</string>
+    <string name="voice_sending">Enviando...</string>
+    <string name="voice_thinking">Pensando...</string>
+    <string name="voice_speaking">Falando...</string>
+    <string name="voice_error">Erro</string>
+
+    <!-- Message Input -->
+    <string name="input_camera">Camera</string>
+    <string name="input_gallery">Galeria</string>
+    <string name="input_voice">Voz</string>
+    <string name="input_send">Enviar</string>
+    <string name="input_placeholder">Mensagem...</string>
+
+    <!-- Chat Screen -->
+    <string name="chat_title">ClawDroid</string>
+    <string name="chat_settings">Configuracoes</string>
+</resources>
